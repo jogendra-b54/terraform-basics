@@ -1,5 +1,5 @@
  variable "sample" {
-    default = "Welcome to Terraform Basics"
+    default = "Welcome to Terraform "
  }
 
  output "sample_output" {
@@ -7,7 +7,7 @@
  }
 
  variable "sample_op" {
-     default =  " value of the variable is ${var.sample_op} "
+     default =  "Welcome to Terraform Training "
 }
 
  output "sample_var_op" {
