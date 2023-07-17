@@ -3,7 +3,7 @@ variable "sample" {
 }
 
 variable "sample_op" {
-    value = var.sample
+    value = "Welcome to Terraform Basics"
 }
 
 output "sample_var_op" {
