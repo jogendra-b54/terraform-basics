@@ -14,6 +14,8 @@
      value = "Value of the variable  is ${var.sample_op}"
  }
 
+ # variable "test" {}  //Empty Variable 
+
 # A variable can be accessed directly by caling it as var.variableName but if you'r accessing in between a 
 #set of String ,then you need to enclose them in quotes and it should be reffered using ${var.varName}
 
