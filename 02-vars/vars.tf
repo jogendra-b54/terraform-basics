@@ -28,5 +28,5 @@ variable "example_list" {
 #You also need to try to understand the data in the List Object doesn't necessary to be of the same data type
 
 output "example_list_op" {
-  value = "Welcome to DevOps with AWS  ${var.example_list[1]} Training with ${var.example_list[0]} Training and this is our batch ${var.example_list[2]} and the current Topic is ${var.example_list[4]}"
+  value = "Welcome to DevOps with AWS-${var.example_list[1]} Training with ${var.example_list[0]} Training and this is our batch ${var.example_list[2]} and the current Topic is ${var.example_list[4]}"
 }
