@@ -1,14 +1,14 @@
-variable "sample" {
-    default = "Welcome to Terraform Basics"
-}
+# variable "sample" {
+#     default = "Welcome to Terraform Basics"
+# }
 
-variable "sample_op" {
-    value = "Welcome to Terraform Basics"
-}
+# variable "sample_op" {
+#     value = "Welcome to Terraform Basics"
+# }
 
-output "sample_var_op" {
-    value = "value of the variable is ${var.sample_op}"
-}
+# output "sample_var_op" {
+#     value = "value of the variable is ${var.sample_op}"
+# }
 
 # A variable can be accessed directly by caling it as var.variableName but if you'r accessing in between a 
 #set of String ,then you need to enclose them in quotes and it should be reffered using ${var.varName}
