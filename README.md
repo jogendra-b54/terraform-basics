@@ -13,6 +13,16 @@ Important Terminology In Terraform
     3) Providers
     4) Modules
 
+Common Terraform Commands
+    $ terraform init 
+    $ terraform plan
+    $ terraform apply -auto-approve 
+
+If you want to supply any values of the variable from the command line.
+
+
+    $ terraform plan -var VARNAME=value
+    $ terraform apply -auto-approve -var VARNAME=value
 In this training, we would be using the latest version of terraform v1.5.2 ( 10/July/2023 )
 
 Terraform supports more 3,339 cloud providers and this keep on growing and this is the major reason why manority of the companies prefer to create infrastucture using terraform.
