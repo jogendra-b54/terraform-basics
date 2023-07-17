@@ -7,7 +7,7 @@ output "sample-op" {
 }
 
 output "sample-var-op" {
-    value = "value of the variable is ${var.sample-op}"
+    value = "value of the variable is ${var.sample_op}"
 }
 
 # A variable can be accessed directly by caling it as var.variableName but if you'r accessing in between a 
