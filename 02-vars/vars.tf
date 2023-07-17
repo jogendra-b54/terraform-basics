@@ -7,7 +7,7 @@
  }
 
  variable "sample_op" {
-     dedefault = " value of the variable is ${var.sample_op} "
+     default =  " value of the variable is ${var.sample_op} "
 }
 
  output "sample_var_op" {
