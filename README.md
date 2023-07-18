@@ -20,6 +20,8 @@ Common Terraform Commands
 
 If you want to supply any values of the variable from the command line.
 
+    $ terraform plan -var VARNAME=value
+    $ terraform apply -auto-approve -var VARNAME=value
 
     $ terraform plan -var VARNAME=value
     $ terraform apply -auto-approve -var VARNAME=value
