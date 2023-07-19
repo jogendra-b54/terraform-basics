@@ -23,8 +23,41 @@ If you want to supply any values of the variable from the command line.
     $ terraform plan -var VARNAME=value
     $ terraform apply -auto-approve -var VARNAME=value
 
-    $ terraform plan -var VARNAME=value
-    $ terraform apply -auto-approve -var VARNAME=value
+-var / var-file > terraform.auto.tfvars > terraformtfvars > shell variables
+
+These are the variables with least priorty and this can be supplied by shell using export
+    $ export TF_VAR_varName=value
+
+This is how we can supply the shell based variABLES 
+
+## What exactly happens when you run a terraform plan 
+```
+when you run a terraform plan , terraform is going to check the current state of the INFRASTRUCTRE and then it validates with the what there is in the code that you're supplying against the terraform state file.
+
+if there are any changes  ( how it comes to know ? Because of the above validation) then the terraform shows that to you during plan output
+
+if you want to make changes then you need to apply 'terraform apply" , when you do terraform apply your state will also be updated
+
+Eventually , your manual changes will be wiped up
+```
+
+## terraform has created some infrastructr and then you manually went and updated those changes on the INFRASTRUCTRE using console
+## Now if you run Terraform apply  with the same old code , what will happend ??
+```
+For terraform whatever is there in the CODE and as per that PLAN will be generated and for terraform PLAN is the source of the truth , which means when you do a 'terraform-apply' ,all your manual changes will be wiped off
+
+in 99% of the times , Majorly  a good setup will ensure you as a user won't be having write access on the console
+
+only IAM role , which we use to configure JENKINS will only have right access   
+```
+## All the operations are supposed to go by terraform only, what all?
+```
+        READ
+        WRITE
+        UPDATE 
+        DELETE
+```
+
 In this training, we would be using the latest version of terraform v1.5.2 ( 10/July/2023 )
 
 Terraform supports more 3,339 cloud providers and this keep on growing and this is the major reason why manority of the companies prefer to create infrastucture using terraform.
