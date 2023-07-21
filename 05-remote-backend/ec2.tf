@@ -3,7 +3,7 @@ resource "aws_instance" "remote-app" {
   instance_type = "t3.nano"
 
   tags = {
-    Name = "Linux_Server_With_RemoteBackend"
+    Name = "Linux_Server_With_Remote_Backend"
   }
 } 
 
