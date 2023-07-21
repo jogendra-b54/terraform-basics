@@ -57,6 +57,15 @@ only IAM role , which we use to configure JENKINS will only have right access
         UPDATE 
         DELETE
 ```
+## Where should i store my statefile ?
+```
+IN a team based environment , you should nenver save your statefile locally and this is to ensure to collaborate in the same team based
+environment
+
+Its always recommened to save state on the top of of available REMOTE BACKENDS
+```
+
+
 
 In this training, we would be using the latest version of terraform v1.5.2 ( 10/July/2023 )
 
