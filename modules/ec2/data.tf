@@ -9,6 +9,6 @@ data "aws_ami" "image" {
   # name_regex = "DevOps-LabImage-Centos7"
   #owners =  ["self"]   # self because the AMI is created as visibilty =private
 
-    owners = ["355449129"]
+    #owners = ["355449129"]
 
   }
