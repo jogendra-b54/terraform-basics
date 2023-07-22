@@ -1,8 +1,8 @@
-# This is an example of calling modules for a local source and hence we call a local modules
-# modules can be in a separate repository or in the same repository where your actual code reside
-# you can also save your modules in a s3 Bucket and can call it accordingly
+/* This is an example of calling modules for a local source and hence we call a local modules
+ modules can be in a separate repository or in the same repository where your actual code reside
+ you can also save your modules in a s3 Bucket and can call it accordingly
 
-# Root module : is a place where we are going to execute the terraform commands
+Root module : is a place where we are going to execute the terraform commands */
 module "ec2" {
   
   source = "./ec2"

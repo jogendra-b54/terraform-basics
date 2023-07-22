@@ -58,7 +58,14 @@ only IAM role , which we use to configure JENKINS will only have right access
         DELETE
 ```
 ## Where should i store my statefile ?
+
+
+## Data sources:
 ```
+    This helps in extracting the information of the already existing resources on AWS and using this we can fetch the information of any existing resources 
+```
+
+
 IN a team based environment , you should nenver save your statefile locally and this is to ensure to collaborate in the same team based
 environment
 
