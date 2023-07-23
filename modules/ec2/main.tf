@@ -17,7 +17,7 @@ resource "aws_instance" "sample" {
     host     = self.private_ip      #aws_instance.sample.private_ip : use this only if your provisioner is outside the resourcee
   }
     inline = [
-      "ansible-pull -U https://github.com/jogendra-b54/ansible.git -e ENV=dev -e COMPONENT=mongodb",
+      "ansible-pull -U https://github.com/jogendra-b54/ansible.git -e ENV=dev -e COMPONENT=mongodb roboshop-pull.yml",
     ]
   }
 
