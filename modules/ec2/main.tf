@@ -5,7 +5,21 @@ resource "aws_instance" "sample" {
    instance_type = "t3.micro"
     vpc_security_group_ids = [var.sg]
     
-   
+
+
+# This will be executed  on the top of the machine once its created ....
+ provisioner "remote-exec" {
+  # connection block establishes connection to this 
+  connection {
+    type     = "ssh"
+    user     = "centos"
+    password = "DevOps321"
+    host     = self.private_ip      #aws_instance.sample.private_ip : use this only if your provisioner is outside the resourcee
+  }
+    inline = [
+      "ansible-pull -U https://github.com/jogendra-b54/ansible.git -e ENV=dev -e COMPONENT=mongodb",
+    ]
+  }
 
 }
 
