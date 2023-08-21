@@ -38,7 +38,7 @@ output "example_list_op" {
 }
 
 # MAP : a varoable with multiple key value pairs is called MAP variable
-/*
+
 variable "example_map" {
   default = {
      Batch = "B55"
@@ -49,4 +49,4 @@ variable "example_map" {
 
 output "example_map_op" {
     value = " We are learning ${var.example_map["Training"]} and this is our batch ${var.example_map["Batch"]} and the training mode is ${var.example_map["Mode"]} "
-}*/
+}
