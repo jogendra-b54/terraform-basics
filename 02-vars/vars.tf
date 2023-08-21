@@ -20,7 +20,7 @@
 #set of String ,then you need to enclose them in quotes and it should be reffered using ${var.varName}
 
 # in terraform there is no concept of Single quotes
-/*
+
 #List variable
 variable "example_list" {
   default = [
@@ -49,4 +49,4 @@ variable "example_map" {
 
 output "example_map_op" {
     value = " We are learning ${var.example_map["Training"]} and this is our batch ${var.example_map["Batch"]} and the training mode is ${var.example_map["Mode"]} "
-}*/
+}
