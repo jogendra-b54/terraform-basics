@@ -13,7 +13,7 @@
  output "sample_var_op" {
      value = "Value of the variable  is ${var.sample_op}"
  }
-/*
+
  # variable "test" {}  //Empty Variable 
 
 # A variable can be accessed directly by caling it as var.variableName but if you'r accessing in between a 
@@ -38,7 +38,7 @@ output "example_list_op" {
 }
 
 # MAP : a varoable with multiple key value pairs is called MAP variable
-
+/*
 variable "example_map" {
   default = {
      Batch = "B55"
