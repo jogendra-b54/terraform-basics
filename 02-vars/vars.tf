@@ -1,11 +1,11 @@
- variable "sample" {
+   variable "sample" {
     default = "Welcome to Terraform "
  }
 
  output "sample_output" {
      value = var.sample
  }
-
+/*
  variable "sample_op" {
      default =  "Welcome to Terraform Training "
 }
@@ -49,4 +49,4 @@ variable "example_map" {
 
 output "example_map_op" {
     value = " We are learning ${var.example_map["Training"]} and this is our batch ${var.example_map["Batch"]} and the training mode is ${var.example_map["Mode"]} "
-}
+}*/
