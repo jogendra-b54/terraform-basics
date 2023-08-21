@@ -5,7 +5,7 @@
  output "sample_output" {
      value = var.sample
  }
-/*
+
  variable "sample_op" {
      default =  "Welcome to Terraform Training "
 }
@@ -13,7 +13,7 @@
  output "sample_var_op" {
      value = "Value of the variable  is ${var.sample_op}"
  }
-
+/*
  # variable "test" {}  //Empty Variable 
 
 # A variable can be accessed directly by caling it as var.variableName but if you'r accessing in between a 
