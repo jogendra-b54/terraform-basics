@@ -19,6 +19,6 @@ resource "aws_security_group" "allows_all" {
 
   tags = {
     Name = "allows_${var.COMPONENT}"
-  }
+  } 
 }
 #step 1 : Declaring the outout that we wish to pass to the root module
