@@ -1,6 +1,6 @@
 # MAP variable
 
-variable "COMPONENT" {
+variable "COMPONENTS" {
     default = {
         mongodb = {
             APP_VERSION = "null"
